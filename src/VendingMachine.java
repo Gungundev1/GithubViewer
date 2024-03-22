@@ -92,16 +92,20 @@ class paymentGateway extends User{
                 System.out.println("        "+"|************|");
                 System.out.println("        "+"|############|");
                 System.out.println("        "+"--------------");
-                System.out.println(random.nextInt(1000));
+               int code= random.nextInt(1000);
+                System.out.println(code);
                 System.out.println("Please Enter Above code ");
-                int code = input.nextInt();
+                int code1 = input.nextInt();
 
-                if(code==random.nextInt()){
+                if(code1==code){
                     System.out.println("Payment Successfully Done!");
                     System.out.println("Here, is your Drink. Take it & Enjoy. Thank you...");
+                    stock -=count;
+                    moneyCollected += money;
                 }
-                stock -=count;
-                moneyCollected += money;
+                else{
+                    System.out.println("Invallid code");
+                }
                 break;
             default:
                 System.out.println("Enter valid Gateway");
