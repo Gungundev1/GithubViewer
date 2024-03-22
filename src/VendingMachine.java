@@ -87,9 +87,9 @@ class paymentGateway extends User{
                 Scanner input = new Scanner(System.in);
                 System.out.println("Scan the QR code");
                 System.out.println("        "+"--------------");
-                System.out.println("        "+"||");
+                System.out.println("        "+"|************|");
                 System.out.println("        "+"|############|");
-                System.out.println("        "+"||");
+                System.out.println("        "+"|************|");
                 System.out.println("        "+"|############|");
                 System.out.println("        "+"--------------");
                 System.out.println(random.nextInt(1000));
