@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 
-=======
 # Github Profile Viewer JavaScript Project
 
 A simple JavaScript project that displays the profile,repositories and recent activity.   
