@@ -23,6 +23,8 @@ input[type="text"] {
     width: 70%;
     padding: 10px;
     margin-right: 10px;
+    outline: none;
+
 }
 
 button {
@@ -35,8 +37,15 @@ button {
     font-weight: bold;
 
 }
+button a:hover{
+    background: linear-gradient(to right,#7847cd,#05000f);
+color: rgb(87, 43, 130);
+}
 
-#profile, #repositories, #activity {
+ 
+
+
+#profile, #repositories, #activity ,#avatar{
     margin-top: 20px;
     text-align: left;
 }
@@ -46,6 +55,12 @@ button {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
+}
+.avatar{
+    width: 150px;
+    height: 150px;
+    border-radius:50% ;
+    border-style: groove;
 }
 
 @media (max-width: 600px) {
